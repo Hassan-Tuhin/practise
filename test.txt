@@ -22,3 +22,40 @@ print('Python' in first)//checked whether the word python is in course variable 
 .............
 .............
 print(1+2) print(2-1) print(2*2) print(10/2) print(10%3) print(2**3)
+x=2.9
+print(round(x))
+print(abs(-2.9))
+..............
+..............
+For all of these mathematical function search as "python 3 math module"
+
+import math
+print(math.ceil(2.9))
+print(math.floor(2.9))
+print(math.factorial(4))
+print(math.fabs(4.678))
+print(math.gcd(8,10))
+...............
+...............
+if else
+1st_Practise:
+is_hot=False //try True here
+is_cold=True //try False here
+if is_hot:
+    print("it's a hot day")
+    print("eat plenty water")
+elif is_cold:
+    print("it's a cold day")
+    print("wear warm clothes")
+else:
+    print("it's a lovely day")
+print("enjoy your day")
+
+practise 2:
+price=100000
+is_good_credit=True
+if is_good_credit:
+    payment=float(price)*0.1
+else:
+    payment=float(price)*0.2
+print(f'down payment: {payment}')

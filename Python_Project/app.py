@@ -1,3 +1,11 @@
-x=2.9
-print(round(x))
-print(abs(-2.9))
+is_hot=False
+is_cold=True
+if is_hot:
+    print("it's a hot day")
+    print("eat plenty water")
+elif is_cold:
+    print("it's a cold day")
+    print("wear warm clothes")
+else:
+    print("it's a lovely day")
+print("enjoy your day")
