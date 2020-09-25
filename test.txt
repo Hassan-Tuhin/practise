@@ -1,3 +1,11 @@
-jsjhfksdjfklsj
-G.H.Tuhin
-hassan tuhin
+25/09/2020
+
+concatinate two strings:
+first='Hassan'
+last=' Tuhin'
+1st process:
+msg=first+' ['+last+' ] '+'is a coder'
+print(msg)
+2nd process:
+msg=f'{first} [{last}] is a coder'
+print(msg)

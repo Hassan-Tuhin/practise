@@ -1,2 +1,4 @@
-course="python for brginners"
-print(course[2:-2])
+first='Hassan'
+last=' Tuhin'
+msg=first+' ['+last+' ] '+'is a coder'
+print(msg)
