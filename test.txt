@@ -9,3 +9,16 @@ print(msg)
 2nd process:
 msg=f'{first} [{last}] is a coder'
 print(msg)
+..........
+..........
+first='Python For Beginners'
+print(len(first))
+print(first.upper())
+print(first.lower())
+print(first.find('y'))
+print(first.replace('Beginners','G.H.Tuhin'))
+print(first.replace('P','J'))
+print('Python' in first)//checked whether the word python is in course variable or not
+.............
+.............
+print(1+2) print(2-1) print(2*2) print(10/2) print(10%3) print(2**3)
