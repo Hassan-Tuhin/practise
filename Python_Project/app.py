@@ -1,11 +1,17 @@
-is_hot=False
-is_cold=True
-if is_hot:
-    print("it's a hot day")
-    print("eat plenty water")
-elif is_cold:
-    print("it's a cold day")
-    print("wear warm clothes")
-else:
-    print("it's a lovely day")
-print("enjoy your day")
+command=""
+while command.lower()!="quit":
+    command=input(">").lower()
+    if command=="start":
+        print("car started.")
+    elif command=="stop":
+        print("car stopped")
+    elif command=="help":
+        print("""
+        start:to start car
+        stop:to stop car
+        quit:to quit system
+        """)
+    elif command=="quit":
+        break
+    else:
+        print("can't understand command")

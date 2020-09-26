@@ -59,3 +59,54 @@ if is_good_credit:
 else:
     payment=float(price)*0.2
 print(f'down payment: {payment}')
+
+has_high_income=False
+has_good_credit=True
+if has_high_income or has_good_credit:
+    print("eligible for loan")
+else:
+    print("not eligible for loan")
+
+
+weight=int(input("enter your weight: "))
+unit=input('(L)bs or (K)kg: ')
+if unit.upper()=="L":
+    converted=weight*0.45
+    print(f'you are  {converted} kilos')
+else:
+    converted=weight/0.45
+    print(f'you are {converted} pounds')
+
+26/09/2020
+............
+secret_number=9
+guess_count=0
+guess_limit=3
+while guess_count<guess_limit:
+    guess=int(input("Guess: "))
+    guess_count+=1
+    if guess==secret_number:
+        print("u won!")
+        break
+else:
+    print("u lose!!!")
+
+.................
+................
+command=""
+while command.lower()!="quit"://or we can write while True
+    command=input(">").lower()
+    if command=="start":
+        print("car started.")
+    elif command=="stop":
+        print("car stopped")
+    elif command=="help":
+        print("""
+        start:to start car
+        stop:to stop car
+        quit:to quit system
+        """)
+    elif command=="quit":
+        break
+    else:
+        print("can't understand command")
