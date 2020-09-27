@@ -110,3 +110,23 @@ while command.lower()!="quit"://or we can write while True
         break
     else:
         print("can't understand command")
+    
+    27/09/2020
+    ..........
+    for item in 'Python':
+    print(item)
+    for item in ["hassan","tuhin","Baizid","Tanbir","Yunus"]:
+    print(item)
+    for item in [1,2,3,4,5,6]:
+    print(item)
+    for item in range(5):
+    print(item)
+    for item in range(5,12):
+    print(item)
+    for item in range(5,12,3):
+    print(item)
+
+cost=0
+for prices in [10,20,30]:
+    cost=cost+prices
+print(f'TOtal cost {cost}')
