@@ -112,7 +112,9 @@ while command.lower()!="quit"://or we can write while True
         print("can't understand command")
     
     27/09/2020
-    ..........
+    PRACTISING LIST
+    ................
+    ................
     for item in 'Python':
     print(item)
     for item in ["hassan","tuhin","Baizid","Tanbir","Yunus"]:
@@ -170,7 +172,10 @@ for row in matrix:
 list=[1,2,3,4,5,6]
 list.append(7)
 print(list)
-try this also
+try this also...........
+list=[1,2,4,5,3]
+list[1]=6
+print(list)
 
 list.insert(2,7)
 list.remove(4)
@@ -204,5 +209,14 @@ for  number in list:
 print(unique)
 .................
 
+PRACTISING TUPPLE
+.................
+list=(1,2,3)
+print(list[1])
 
+it'll be error if we want to change index value like list
 
+list=(1,2,3)
+list[1]=4
+print(list[1])
+ 

@@ -1,4 +1,3 @@
-list=[1,2,4,5,3]
-list.sort()
-list.reverse()
-print(list)
+list=(1,2,3)
+list[1]=4
+print(list[1])
