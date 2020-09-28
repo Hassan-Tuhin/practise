@@ -184,4 +184,25 @@ list=[3,45,6,1,8,9,10]
 list.sort()
 print(list)
 ............
+list=[1,1,2,4,5,5,3]
+list2=list.copy()
+print(list2)
+.............
+list=[1,2,4,5,3]
+list.sort()
+list.reverse()
+print(list)
+.............
+removing duplicate numbers:::
+
+list=[1,1,2,4,5,5,3]
+unique=[]
+for  number in list:
+    if number not in unique:
+        unique.append(number)
+                                    //unique.sort()
+print(unique)
+.................
+
+
 
