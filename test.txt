@@ -220,3 +220,60 @@ list=(1,2,3)
 list[1]=4
 print(list[1])
  
+ coordinates=[1,2,3]
+(x,y,z)=coordinates
+print(f'y={y}')
+
+Dictionay:
+..........
+customer={
+    "name":"Golam Hassan Tohin",
+    "age":23,
+    "is_valid":True
+}
+print(customer["age"])
+or,,
+print(customer.get("age"))
+
+print(customer.get("birhtdate"))//print an error ior none
+print(customer.get("birhtdate","04-05-1998"))
+print(f'age:{customer.get("age")}')
+
+Function:
+....................
+def hello():
+    print("Hello Hassan")
+    print("Hello Tuhin")
+print("function start")
+hello() //call the hello function
+print("function end")
+..........
+def hello(name)://here name is a parameter
+    print(f'Hii {name}')
+    print("welcome")
+
+hello("Tuhin")//we r calling the hello function.
+    as there is a parameter so we need to pass it inside
+    hello like "Hassan" or we can pass any digit also..
+...............
+passing two parameter:
+def hello(first_name,last_name):
+    print(f'Hii {first_name} {last_name}')
+    print("welcome")
+
+hello("Hassan","Tuhin")
+.................
+def square(number):
+    return number*number
+    
+number=int(input('number='))
+print(square(number))
+.................
+try:
+    age=int(input('age: '))
+    print(age)
+except ValueError:
+    print("Invalid!!!!")
+.................
+
+

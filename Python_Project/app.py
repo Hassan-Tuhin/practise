@@ -1,3 +1,5 @@
-list=(1,2,3)
-list[1]=4
-print(list[1])
+try:
+    age=int(input('age: '))
+    print(age)
+except ValueError:
+    print("Invalid!!!!")
