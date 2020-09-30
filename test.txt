@@ -338,7 +338,32 @@ dog.pet()#This is the method of Dog class
 cat=Cat()
 cat.walk()
 ..................
+importing data from another file:
 
+import converters//This is another file 
+print(converters.lbs_to_kg(70))
+...........
+importing specific function:
+from converters import lbs_to_kg
+print(lbs_to_kg(70))
+..................
+..................
+printing largest number: 
+This is app.py file
 
+from utils import find_max
+numbers=[2,3,4,1,6,7,5,8,10,11]
+max=find_max(numbers)
+print(f'largest number is:{max}')
+
+This is utils.py file
+
+def find_max(numbers):
+    max=numbers[0]
+    for number in numbers:
+        if number>max:
+            max=number
+    return max
+...................
 
 
