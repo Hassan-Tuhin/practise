@@ -275,5 +275,38 @@ try:
 except ValueError:
     print("Invalid!!!!")
 .................
+.................
+Class
+.....
+class Point():
+    def move(self):
+        print("move")
+    def name(self):
+        print("pass")
+
+point1=Point()
+point1.move()
+point1.name()
+
+point1.x=2
+point1.y=3
+print(point1.x)
+..............
+CONSTRUCTOR
+...........
+class Point():
+    def __init__(self,x,y):
+        self.x=x
+        self.y=y
+    def move(self):
+        print("move")
+    def name(self):
+        print("pass")
+
+point2=Point(10,20)
+print(point2.y)  //watch mosh video in 03:09
+....................
+
+
 
 
