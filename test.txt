@@ -304,8 +304,40 @@ class Point():
         print("pass")
 
 point2=Point(10,20)
-print(point2.y)  //watch mosh video in 03:09
+print(point2.y)  //watch mosh video in 03:09:10
 ....................
+class Person():
+    def __init__(self,name):
+        self.name=name
+    def talk(self):
+        print(f'hi it is {self.name}')
+
+person1=Person("Tuhin") 
+person1.talk()
+...................
+
+INHERITENCE:::
+.............
+class Mammal():  #it's the parent class
+    def walk(self):
+        print("Walk")
+
+
+class Dog(Mammal):#We pass Mammel here as parent class.so all of the features of Mammal can be used by this class
+    def pet(self):
+        print("is a pet")
+
+
+class Cat(Mammal):
+    pass
+
+dog=Dog()
+dog.walk()#This is Mammal class method & we can ue it here by inheritance
+dog.pet()#This is the method of Dog class
+
+cat=Cat()
+cat.walk()
+..................
 
 
 

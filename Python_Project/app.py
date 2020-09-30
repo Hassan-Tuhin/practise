@@ -1,14 +1,19 @@
-class point():
-    def __init__(self,x,y):
-        self.x=x
-        self.y=y
-    def move(self):
-        print("move")
-    def name(self):
-        print("pass")
+class Mammal():  #it's the parent class
+    def walk(self):
+        print("Walk")
 
-point2=point(10,20)
-print(point2.y)
 
-point2.y=25
-print(point2.y)
+class Dog(Mammal):#We pass Mammel here as parent class.so all of the features of Mammal can be used by this class
+    def pet(self):
+        print("is a pet")
+
+
+class Cat(Mammal):
+    pass
+
+dog=Dog()
+dog.walk()#This is Mammal class method & we can ue it here by inheritance
+dog.pet()#This is the method of Dog class
+
+cat=Cat()
+cat.walk()
