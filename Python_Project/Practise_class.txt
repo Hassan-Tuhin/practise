@@ -1,0 +1,25 @@
+class Profile():
+    def __init__(self,name,age,salary):#it's a constructor
+        self.name=name
+        self.age=age
+        self.salary=salary
+    
+        
+tuhin=Profile('Hassan',20,500000)
+print(f"{tuhin.name}'s Profile... name:{tuhin.name}  age:{tuhin.age} salary:{tuhin.salary}")
+shifu=Profile('Shifuddin',10,400000)
+print(shifu.salary)
+...................
+class Profile():
+    def __init__(self,fname,lname,age,salary):#it's a constructor
+        self.fname=fname
+        self.lname=lname
+        self.age=age
+        self.salary=salary
+        self.email=fname+lname+'@gmail.com'
+
+tuhin=Profile('Hassan','tuhin',20,500000)
+print(tuhin.email)
+tanbir=Profile('Tanbir','sakib',22,450000)
+print(tanbir.email)
+.....................
