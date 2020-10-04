@@ -1,3 +1,7 @@
+watch this tutorial:
+https://www.youtube.com/watch?v=ZDa-Z5JzLYM
+https://www.youtube.com/watch?v=BJ-VvGyQxho
+
 class Profile():
     def __init__(self,name,age,salary):#it's a constructor
         self.name=name
@@ -23,3 +27,42 @@ print(tuhin.email)
 tanbir=Profile('Tanbir','sakib',22,450000)
 print(tanbir.email)
 .....................
+class Profile():
+    def __init__(self,fname,lname,age,salary):
+        self.fname=fname
+        self.lname=lname
+        self.age=age
+        self.salary=salary
+        self.email=fname+lname+'@gmail.com'
+
+    def fullname(self):
+        return '{}{}'.format(self.fname,self.lname)
+
+tuhin=Profile('Hassan','Tuhin',20,500000)
+print(tuhin.email)
+
+print(tuhin.fullname())
+print(tuhin.__dict__)
+...........................
+class Profile():
+    def __init__(self,fname,lname,salary):
+        self.fname=fname
+        self.lname=lname
+        self.salary=salary
+
+    def apply_raise(self):
+        self.salary=int(self.salary*1.04)
+
+shifuddin=Profile('Shifuddin','Tushar',450000)
+tuhin=Profile('Hassan','Tuhin',500000)
+
+print(f"tuhin's salry {tuhin.salary}")
+tuhin.apply_raise()
+print("tuhin's salary after applying apply_raise")
+print(tuhin.salary)
+
+print(f"shifuddin's salary {shifuddin.salary}")
+shifuddin.apply_raise()
+print("shifuddin's salary after applying apply_raise")
+print(shifuddin.salary)
+..............................
