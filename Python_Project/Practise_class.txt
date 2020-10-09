@@ -102,3 +102,103 @@ print(tuhin.raise_amount)
 print(tuhin.__dict__)
 print(shifuddin.raise_amount)'''
 ...........................
+...........................
+CLASS METHOD and STATIC METHOD
+
+watch: https://www.youtube.com/watch?v=rq8cL2XMM5M
+
+class Profile():
+    num_of_employee=0
+    raise_amount=1.04
+    def __init__(self,fname,lname,salary):
+        self.fname=fname
+        self.lname=lname
+        self.salary=salary
+
+        Profile.num_of_employee+=1 #this will count number of employees
+
+    def apply_raise(self):
+        self.salary=int(self.salary*Profile.raise_amount)
+
+    @classmethod
+    def set_raise_amount(cls, amount)://cls is a instance here
+        cls.raise_amount=amount
+    @classmethod
+    def from_str(cls, emp_str): //cls is a instance here
+        fname,lname,salary=emp_str.split('-')
+        return cls(fname,lname,salary)
+
+#tuhin=Profile('Hassan','Tuhin',500000)
+#shifuddin=Profile('Shifuddin','Tushar',450000)
+emp_str_1='Hassan-Tuhin-500000'
+emp_str_2='Tanbir_sakib_499999'
+
+new_emp_1=Profile.from_str(emp_str_1)
+print(new_emp_1.fname)
+..........................
+@staticmethod
+    def work_day(day):
+        if day.weekday()==4 or day.weekday()==5:
+            return False
+        return True
+
+import datetime
+my_time=datetime.date(2020, 1, 5)#(year,month,day)
+print(Profile.work_day(my_time))
+.................................
+
+class Profile():
+    def __init__(self,fname,lname,salary):
+        self.fname=fname
+        self.lname=lname
+        self.salary=salary
+        self.email=fname+lname+'@gmail.com'
+
+    def fullname(self):
+        return '{}{}'.format(self.fname,self.lname)
+class Developer(Profile):
+    def __init__(self,fname,lname,salary,prog_lan):
+        super().__init__(fname,lname,salary)
+        self.prog_lan=prog_lan
+
+class Manager(Profile):
+    def __init__(self,fname,lname,salary,employees=None):
+        super().__init__(fname,lname,salary)
+        if employees is None:
+            self.employees=[]
+        else:
+            self.employees=employees
+    def add_emp(self,emp):
+        if emp not in self.employees:
+            self.employees.append(emp)
+    def remove_emp(self,emp):
+        if emp in self.employees:
+            self.employees.remove(emp)
+    def print_emp(self):
+        for emp in self.employees:
+            print('-->',emp.fullname())
+    
+profile1=Developer('Hasan',' Tuhin',500000,'Python')
+profile2=Developer('Tanbir',' Sakib','499999','JS')
+profile3=Developer('Baizid',' Mahmud',500000,'Python')
+profile4=Developer('Emon',' yunus','499999','JS')
+profile5=Developer('Sakib',' Ahmed',500000,'Python')
+profile6=Developer('Joynal',' tamim','499999','JS')
+profile7=Developer('Ariful',' islam',500000,'Python')
+profile8=Developer('Shahedul',' islam','499999','JS')
+
+mgr_1=Manager('Karim','Hossan',550000,[profile1,profile3,profile4,profile6])
+print(mgr_1.email)
+mgr_1.print_emp()#this is d Developer name whose are supervising by manager1
+
+mgr_2=Manager('Shahed','karim',550000,[profile2,profile5,profile7,profile8])
+print(mgr_2.email)
+mgr_2.print_emp()#this is d Developer name whose are supervising by manager2
+
+..........................................
+mgr_1.add_emp(profile8)
+mgr_1.print_emp()
+print('after removing:')
+mgr_1.remove_emp(profile8)
+mgr_1.print_emp()
+..............................
