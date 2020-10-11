@@ -353,7 +353,7 @@ print(lbs_to_kg(70))
 ..................
 ..................
 importing function from another package or folder:
-This is app.py function
+This is app.py function.
 
 import sys
 sys.path.insert(1,'C:/Users/Elysium/Desktop/git/ecommerce')
