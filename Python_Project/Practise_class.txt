@@ -278,3 +278,7 @@ print(hassan.fullname)
 #hassan.lname='Byt'
 #print(hassan.email)
 ...............................
+hassan=Profile('Hassan','Tuhin')
+import inspect
+print(inspect.getmembers(hassan))
+...............................

@@ -1,0 +1,33 @@
+#d1={'Hassan':'meat','Tuhin':'Fish','Baizid':'Egg'}
+#print(d1['Baizid'])
+d2={'Hassan':'meat',
+    'Tuhin':'Fish',
+    'Baizid':'Egg',
+    'Tanbir':{'B':'>Banana','L':'>Rice','D':'>Roti'}
+    }
+#print(d2['Tanbir']['B'])
+
+d2['Sakib']='Apple' #adding new element in dictionary
+d2['Yunus']='Orange'
+print(d2) 
+del d2['Yunus']#deleting from dictionary
+print(d2)
+
+#d3=d2.copy()
+#print(d3)
+#del d3['Baizid']#deleting item from dictionary
+#print(d3)
+#print(d2.get('Tuhin'))
+#d2.update({'Sakib':'Bananas'})#updating or adding dict.
+#print(d2)
+#print(d2.keys())
+#print(d2.items())
+..................
+d2={'Hassan':'meat',
+    'Tuhin':'Fish',
+    'Fahim':'Egg',
+    'Tanbir':'Roti'
+    }
+for x,y in d2.items():
+    print(x,y)
+......................
