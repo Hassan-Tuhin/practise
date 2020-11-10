@@ -1,0 +1,15 @@
+l1=['Hassan','Tuhin','Baizid','Askander']
+l2=['Yunus','Tanbir','Sakib','Vaiye']
+
+#print(l1[0:2])
+#print(l1[0:])
+#print(l1[2:])
+#print(l1[-1])
+'''l1.append('Fahim')
+print(l1)'''
+'''l1.insert(2,'Fahim')
+print(l1)'''
+
+#print(len(l1))
+#l1.extend(l2)
+#print(l1)
