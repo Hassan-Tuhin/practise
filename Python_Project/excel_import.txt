@@ -6,3 +6,18 @@ cell=sheet['C10']
 for row in range(4,11):
     cell=sheet.cell(row,2)
     print(cell.value)
+................................
+................................
+import openpyxl as xl
+wb=xl.load_workbook("4A562000.xlsx")
+sheet=wb["Sheet2"]
+#cell=sheet['B10']
+for row in range(4,12):
+    cell=sheet.cell(row,4)
+    corrected_price=cell.value*2
+    corrected_price_cell=sheet.cell(row,5)
+    corrected_price_cell.value=corrected_price
+
+wb.save('4A5620002.xlsx')
+................................
+................................
