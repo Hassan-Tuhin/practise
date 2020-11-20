@@ -8,6 +8,8 @@ for row in range(4,11):
     print(cell.value)
 ................................
 ................................
+updating one cell and put its value in a new cell:
+
 import openpyxl as xl
 wb=xl.load_workbook("4A562000.xlsx")
 sheet=wb["Sheet2"]
@@ -21,3 +23,51 @@ for row in range(4,12):
 wb.save('4A5620002.xlsx')
 ................................
 ................................
+#importing a chart into a excel file:
+
+import openpyxl as xl
+from openpyxl.chart import BarChart,Reference
+
+wb=xl.load_workbook("practise.xlsx")
+sheet=wb["Sheet1"]
+for row in range(4,8):
+    cell=sheet.cell(row,4)
+    corrected_price=cell.value*2
+    corrected_price_cell=sheet.cell(row,5)
+    corrected_price_cell.value=corrected_price
+values=Reference(sheet,
+          min_row=4,
+          max_row=7,
+          min_col=4,
+          max_col=4)
+chart=BarChart()
+chart.add_data(values)
+sheet.add_chart(chart, 'e2')
+
+wb.save('4A5620002.xlsx') #imported chart is saved in this file
+............................
+#use a function:
+
+import openpyxl as xl
+from openpyxl.chart import BarChart,Reference
+
+def Process_workbook(filename):
+    wb=xl.load_workbook(filename)
+    sheet=wb["Sheet1"]
+    for row in range(4,8):
+        cell=sheet.cell(row,4)
+        corrected_price=cell.value*2
+        corrected_price_cell=sheet.cell(row,5)
+        corrected_price_cell.value=corrected_price
+    values=Reference(sheet,
+            min_row=4,
+            max_row=7,
+            min_col=4,
+            max_col=4)
+    chart=BarChart()
+    chart.add_data(values)
+    sheet.add_chart(chart, 'e2')
+
+    wb.save(filename) 
+..............................
+
