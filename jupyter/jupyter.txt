@@ -1,0 +1,21 @@
+importing csv file:
+
+import pandas as pd 
+
+music_data = pd.read_csv('music.csv')
+music_data
+................................
+predicting people's choice:
+
+
+import pandas as pd 
+from sklearn.tree import DecisionTreeClassifier
+
+music_data = pd.read_csv('music.csv')
+X=music_data.drop(columns=['genre']) #This will show other coulumns except genre
+y=music_data['genre'] #This will show genre column
+
+model=DecisionTreeClassifier()
+model.fit(X,y)
+predictions=model.predict([ [27,1],[28,0] ]) #This will predict 27y old male like what & 28y old women like what
+predictions
